@@ -68,10 +68,10 @@
 </style>
 <script type="module">
 	const examples = [
-		'news.ycombinator.com/rss',
-		'www.reddit.com/r/programming/.rss',
-		'www.reddit.com/r/linux/.rss',
-		'www.phoronix.com/rss.php',
+		'https://feeds.feedburner.com/LatestActivityLandSurveyors',
+		'https://landsurveyorsunited.com/forum/topics/feed/all',
+		'https://landsurveyorsunited.com/video/feed/all',
+		'https://landsurveyorsunited.com/articles/feed/all',
 	];
 	const el = (tag, props = {}, ch = []) => ch.reduce((e, c) => (e.appendChild(c), e), Object.assign(document.createElement(tag), props))
 	const CORS = (url) => 'https://damp-mouse-75ea.pejan97800.workers.dev/https://' + url;
